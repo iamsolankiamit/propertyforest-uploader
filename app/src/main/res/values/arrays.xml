@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="citiesList">
+        <item>@string/city_silvassa</item>
+        <item>@string/city_vapi</item>
+        <item>@string/city_daman</item>
+        <item>@string/city_bhilad</item>
+        <item>@string/city_navsari</item>
+        <item>@string/city_sanjan</item>
+        <item>@string/city_Umargaon</item>
+        <item>@string/city_valsad</item>
+    </string-array>
+
+    <string-array name="statesList">
+        <item>@string/state_dadra_and_nagar_haveli</item>
+        <item>@string/state_gujrat</item>
+    </string-array>
+
+    <string-array name="countryList">
+        <item>@string/country_india</item>
+    </string-array>
+
+    <string-array name="leaseList">
+        <item>@string/lease_family_and_company</item>
+        <item>@string/lease_family_only</item>
+        <item>@string/lease_no_restriction</item>
+    </string-array>
+
+    <string-array name="configurationList">
+        <item>@string/configuration_1rk</item>
+        <item>@string/configuration_1bhk</item>
+        <item>@string/configuration_2bhk</item>
+        <item>@string/configuration_3bhk</item>
+        <item>@string/configuration_4bhk</item>
+        <item>@string/configuration_5bhk</item>
+        <item>@string/configuration_6bhk</item>
+        <item>@string/configuration_7bhk</item>
+        <item>@string/configuration_8bhk</item>
+        <item>@string/configuration_9bhk</item>
+    </string-array>
+
+
+    <string-array name="houseFacingList">
+        <item>@string/house_facing_north</item>
+        <item>@string/house_facing_east</item>
+        <item>@string/house_facing_west</item>
+        <item>@string/house_facing_south</item>
+    </string-array>
+
+    <string-array name="furnishingList">
+        <item>@string/furnishing_furnished</item>
+        <item>@string/furnishing_semi_furnished</item>
+        <item>@string/furnishing_unfurnished</item>
+    </string-array>
+
+</resources>

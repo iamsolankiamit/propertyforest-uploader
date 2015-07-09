@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Property Uploader</string>
+    <string name="title_section1">Home</string>
+    <string name="title_section2">Rental Form</string>
+    <string name="title_section3">Rental Galleries</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_rental_form">RentalFormActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="city_prompt">Choose a City</string>
+    <string name="state_prompt">Choose a State</string>
+    <string name="country_prompt">Choose a country</string>
+    <string name="furnishing_prompt">Choose a Furnishing Type</string>
+    <string name="lease_prompt">Choose a Lease Type</string>
+    <string name="configuration_prompt">Choose a Configuration Type</string>
+    <string name="house_facing_prompt">Choose a House Facing</string>
+    <string name="btnTakePicture">Capture Image</string>
+    <string name="btnRecordVideo">Record Video</string>
+    <string name="or">(or)</string>
+    <string name="btnUploadToServer">Upload to Server</string>
+    <!-- cities -->
+    <string name="city_silvassa">Silvassa</string>
+    <string name="city_vapi">Vapi</string>
+    <string name="city_Umargaon">Umargaon</string>
+    <string name="city_navsari">Navsari</string>
+    <string name="city_daman">Daman</string>
+    <string name="city_valsad">Valsad</string>
+    <string name="city_sanjan">Sanjan</string>
+    <string name="city_bhilad">Bhilad</string>
+    <!-- cities end -->
+
+
+    <!-- State -->
+    <string name="state_dadra_and_nagar_haveli">Dadra and Nagar Haveli</string>
+    <string name="state_gujrat">Gujrat</string>
+    <!-- State end -->
+
+    <!--Country-->
+    <string name="country_india">India</string>
+    <!--Country End-->
+
+    <!--lease-->
+    <string name="lease_no_restriction">No Restriction</string>
+    <string name="lease_family_only">Family only</string>
+    <string name="lease_family_and_company">Family and Company</string>
+    <!--lease ends-->
+
+    <!--Configurations Start-->
+    <string name="configuration_1rk">1 Rk</string>
+    <string name="configuration_1bhk">1 Bhk</string>
+    <string name="configuration_2bhk">2 Bhk</string>
+    <string name="configuration_3bhk">3 Bhk</string>
+    <string name="configuration_4bhk">4 Bhk</string>
+    <string name="configuration_5bhk">5 Bhk</string>
+    <string name="configuration_6bhk">6 Bhk</string>
+    <string name="configuration_7bhk">7 Bhk</string>
+    <string name="configuration_8bhk">8 Bhk</string>
+    <string name="configuration_9bhk">9 Bhk</string>
+    <!--Configurations end-->
+
+    <!--house facing-->
+    <string name="house_facing_east">East</string>
+    <string name="house_facing_west">West</string>
+    <string name="house_facing_north">North</string>
+    <string name="house_facing_south">South</string>
+    <!--house facing ends-->
+
+    <!--furnishing-->
+    <string name="furnishing_unfurnished">Unfurnished</string>
+    <string name="furnishing_furnished">Furnished</string>
+    <string name="furnishing_semi_furnished">Semi Furnished</string>
+    <!--furnishing ends-->
+
+    <string name="title_activity_rental_gallery">rental_gallery</string>
+    <string name="title_activity_upload">UploadActivity</string>
+    <string name="title_activity_main_activity2">MainActivity2</string>
+
+</resources>

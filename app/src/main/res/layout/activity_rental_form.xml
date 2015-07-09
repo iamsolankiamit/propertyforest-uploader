@@ -1,0 +1,450 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.propertyforest.propertyuploader.RentalFormActivity"
+    android:id="@+id/scrollView">
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/RentalFormRelativeLayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Title"
+        android:id="@+id/TextViewTitle"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditTextTitle"
+        android:layout_below="@+id/TextViewTitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip"
+        android:singleLine="true" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Street"
+        android:id="@+id/TextViewStreet"
+        android:layout_below="@+id/EditTextTitle" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditTextStreet"
+        android:layout_below="@+id/TextViewStreet"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip"
+        android:singleLine="true"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Locality"
+        android:id="@+id/TextViewLocality"
+        android:layout_below="@+id/EditTextStreet"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditTextLocality"
+        android:layout_below="@+id/TextViewLocality"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip"
+        android:singleLine="true"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="House"
+        android:id="@+id/TextViewHouse"
+        android:layout_below="@+id/EditTextLocality"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditTextHouse"
+        android:layout_below="@+id/TextViewHouse"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip"
+        android:singleLine="true"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Address Line"
+        android:id="@+id/TextViewAddressLine"
+        android:layout_below="@+id/EditTextHouse"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditTextAddressLine"
+        android:layout_below="@+id/TextViewAddressLine"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip"
+        android:singleLine="true"/>
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SpinnerCity"
+        android:prompt="@string/city_prompt"
+        android:textSize="20sp"
+        android:entries="@array/citiesList"
+        android:layout_below="@+id/EditTextAddressLine"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SpinnerState"
+        android:prompt="@string/state_prompt"
+        android:textSize="20sp"
+        android:entries="@array/statesList"
+        android:layout_below="@+id/SpinnerCity"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SpinnerCountry"
+        android:prompt="@string/country_prompt"
+        android:textSize="20sp"
+        android:entries="@array/countryList"
+        android:layout_below="@+id/SpinnerState"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip"/>
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SpinnerConfiguration"
+        android:prompt="@string/configuration_prompt"
+        android:textSize="20sp"
+        android:entries="@array/configurationList"
+        android:layout_below="@+id/SpinnerCountry"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip"/>
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="RentAmount"
+        android:id="@+id/TextViewRentAmount"
+        android:layout_below="@+id/SpinnerConfiguration"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditTextRentAmount"
+        android:layout_below="@+id/TextViewRentAmount"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Maintenance Amount"
+        android:id="@+id/TextViewMaintenanceAmount"
+        android:layout_below="@+id/EditTextRentAmount"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditTextMaintenanceAmount"
+        android:layout_below="@+id/TextViewMaintenanceAmount"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip"
+        android:singleLine="true" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Master Bedroom Count"
+        android:id="@+id/TextViewMasterBedroomCount"
+        android:layout_below="@+id/EditTextMaintenanceAmount"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditTextMasterBedroomCount"
+        android:layout_below="@+id/TextViewMasterBedroomCount"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip"
+        android:singleLine="true" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="SecurityDepositAmount"
+        android:id="@+id/TextViewSecurityDepositAmount"
+        android:layout_below="@+id/EditTextMasterBedroomCount"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditTextSecurityDepositAmount"
+        android:layout_below="@+id/TextViewSecurityDepositAmount"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip"
+        android:singleLine="true"/>
+
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SpinnerLease"
+        android:prompt="@string/lease_prompt"
+        android:textSize="20sp"
+        android:entries="@array/leaseList"
+        android:layout_below="@+id/EditTextSecurityDepositAmount"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip"/>
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SpinnerHouseFacing"
+        android:prompt="@string/house_facing_prompt"
+        android:textSize="20sp"
+        android:entries="@array/houseFacingList"
+        android:layout_below="@+id/SpinnerLease"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Builtup Area"
+        android:id="@+id/TextViewBuiltupArea"
+        android:layout_below="@+id/SpinnerHouseFacing"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditTextBuiltupArea"
+        android:layout_below="@+id/TextViewBuiltupArea"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip"
+        android:singleLine="true"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Availability"
+        android:id="@+id/TextViewAvailability"
+        android:layout_below="@+id/EditTextBuiltupArea"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditTextAvailability"
+        android:layout_below="@+id/TextViewAvailability"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip"
+        android:singleLine="true"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Bathrooms"
+        android:id="@+id/TextViewBathrooms"
+        android:layout_below="@+id/EditTextAvailability"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditTextBathrooms"
+        android:layout_below="@+id/TextViewBathrooms"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip"
+        android:singleLine="true"/>
+
+
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SpinnerFurnishing"
+        android:prompt="@string/furnishing_prompt"
+        android:textSize="20sp"
+        android:entries="@array/furnishingList"
+        android:layout_below="@+id/EditTextBathrooms"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip"/>
+
+    <Button
+        android:id="@+id/ButtonLocation"
+        android:layout_height="wrap_content"
+        android:text="Get Current location!"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/SpinnerFurnishing"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ac"
+        android:id="@+id/RadioButtonAC"
+        android:layout_below="@+id/ButtonLocation"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TV"
+        android:id="@+id/RadioButtonTV"
+        android:layout_below="@+id/RadioButtonAC"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cupboards"
+        android:id="@+id/RadioButtonCupboards"
+        android:layout_below="@+id/RadioButtonTV"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bed"
+        android:id="@+id/RadioButtonBed"
+        android:layout_below="@+id/RadioButtonCupboards"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sofa"
+        android:id="@+id/RadioButtonSofa"
+        android:layout_below="@+id/RadioButtonBed"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dining Table"
+        android:id="@+id/RadioButtonDiningTable"
+        android:layout_below="@+id/RadioButtonSofa"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Microwave"
+        android:id="@+id/RadioButtonMicrowave"
+        android:layout_below="@+id/RadioButtonDiningTable"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fridge"
+        android:id="@+id/RadioButtonFridge"
+        android:layout_below="@+id/RadioButtonMicrowave"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stove"
+        android:id="@+id/RadioButtonStove"
+        android:layout_below="@+id/RadioButtonFridge"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Washing Machine"
+        android:id="@+id/RadioButtonWashingMachine"
+        android:layout_below="@+id/RadioButtonStove"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Servant Room"
+        android:id="@+id/RadioButtonServantRoom"
+        android:layout_below="@+id/RadioButtonWashingMachine"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lift"
+        android:id="@+id/RadioButtonLift"
+        android:layout_below="@+id/RadioButtonServantRoom"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gas Pipeline"
+        android:id="@+id/RadioButtonGasPipeline"
+        android:layout_below="@+id/RadioButtonLift"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gym"
+        android:id="@+id/RadioButtonGym"
+        android:layout_below="@+id/RadioButtonGasPipeline"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Swimming Pool"
+        android:id="@+id/RadioButtonSwimmingPool"
+        android:layout_below="@+id/RadioButtonGym"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parking"
+        android:id="@+id/RadioButtonParking"
+        android:layout_below="@+id/RadioButtonSwimmingPool"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip" />
+
+    <Button
+        android:id="@+id/ButtonSendRental"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:onClick="sendRental"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/RadioButtonParking"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip" />
+
+
+</RelativeLayout>
+
+
+</ScrollView>

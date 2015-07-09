@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/view_background"
+    android:orientation="vertical"
+    android:padding="10dp" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/view_background"
+        android:orientation="vertical"
+        android:id="@+id/LinearFinishUploading"
+        android:padding="10dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finish Uploading"
+            android:gravity="center"
+            android:id="@+id/finishUploading"
+           /> >
+    </LinearLayout>
+    <ListView
+        android:id="@+id/downloadListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearFinishUploading"
+        android:layout_alignParentLeft="true"
+        android:focusable="false" >
+    </ListView>
+</RelativeLayout>
